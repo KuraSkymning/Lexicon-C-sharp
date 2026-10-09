@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="ExceptionsDemo.csproj" />
+  <Project Path="TestProject/TestProject.csproj" Id="4bd9a43a-5e28-4144-a595-4ae38c51de83" />
 </Solution>
