@@ -80,9 +80,9 @@ namespace Garage
             int pagesize = 5;
             Console.Write($"Ange hur många du vill visa åt gången ({pagesize}): ");
             string s = Console.ReadLine()?.Trim() ?? throw new IOException();
-            if (int.TryParse(s, out int n) && n > 10)
+            if (int.TryParse(s, out int n) && n > 0)
             {
-                pagesize = 5;
+                pagesize = n;
             }
 
             ListVehiclesInPages(_vehicles, pagesize);

@@ -131,6 +131,11 @@ namespace Garage
                 throw new IndexOutOfRangeException();
             }
 
+            if (_garages[n] == Current)
+            {
+                Current = null;
+            }
+
             for (int i = n; i < _garages.Length - 1; i++)
             {
                 _garages[i] = _garages[i + 1];

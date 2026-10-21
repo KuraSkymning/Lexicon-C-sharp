@@ -24,7 +24,7 @@ namespace Garage.Vehicles
         {
             get; protected set
             {
-                field = value >= 1 || value <= 3000 ?
+                field = value == null || value >= 1 && value <= 3000 ?
                     value :
                     throw new ArgumentOutOfRangeException(nameof(value),
                     "Cylindervolymen på en motorcykel måste vara mellan 1 och 3000 kubikcentimeter.");

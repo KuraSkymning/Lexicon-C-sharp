@@ -46,7 +46,7 @@ namespace Garage.Vehicles
         {
             get; set
             {
-                field = value == null || value >= 4 && value <= 19 ?
+                field = value == null || value >= 4 && value <= 20 ?
                         value :
                         throw new ArgumentOutOfRangeException(nameof(value),
                         "Längden på ett flygplan måste vara mellan 4 och 20 meter.");

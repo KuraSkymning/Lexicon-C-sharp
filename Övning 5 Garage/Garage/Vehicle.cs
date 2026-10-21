@@ -152,7 +152,8 @@ namespace Garage
                 VehicleType.Airplane => new Airplane(regNr),
                 VehicleType.Car => new Car(regNr),
                 VehicleType.Bus => new Bus(regNr),
-                _ => new Boat(regNr),
+                VehicleType.Boat => new Boat(regNr),
+                _ => throw new ArgumentException("Okänd fordonstyp."),
             };
             return vehicle;
         }
