@@ -1,5 +1,4 @@
-﻿using Garage.Vehicles;
-using System;
+﻿using System;
 using System.IO;
 
 namespace Garage
